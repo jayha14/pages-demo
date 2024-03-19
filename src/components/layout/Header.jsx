@@ -15,9 +15,7 @@ function Header() {
     {
       name: 'TIN TỨC',
     },
-    {
-      name: 'TIN TỨC',
-    },
+
     {
       name: 'DỊCH VỤ',
     },
