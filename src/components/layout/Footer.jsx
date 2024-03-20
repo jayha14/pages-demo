@@ -1,5 +1,9 @@
 import Logo from '../../assets/images/logo.png';
 import Hour from '../../assets/images/24-hours.svg';
+import Car from '../../assets/images/car.webp';
+import Circle from '../../assets/images/circle.webp';
+import Box from '../../assets/images/box.webp';
+import List from '../../assets/images/list.webp';
 function Footer() {
   const data = [
     {
@@ -21,8 +25,45 @@ function Footer() {
       name: 'LIÊN HỆ',
     },
   ];
+  const bannerData = [
+    {
+      img: Car,
+      title: 'Giao hàng miễn phí',
+      des: '10km với đơn hàng từ 2tr',
+    },
+    {
+      img: Circle,
+      title: 'Hỗ trợ 24/7',
+      des: 'Nhanh chóng thuận tiện',
+    },
+    {
+      img: Box,
+      title: 'Đổi hàng 7 ngày',
+      des: 'Hấp dẫn chưa từng có',
+    },
+    {
+      img: List,
+      title: 'Giá tiêu chuẩn',
+      des: 'Tiết kiệm 10% giá cả',
+    },
+  ];
   return (
     <>
+      <div className="py-[30px] bg-[#6d2b0a] flex items-center justify-between 2xl:px-[20%] px-[10%] text-white">
+        {bannerData.map((item, index) => (
+          <div key={index} className="flex items-center gap-3">
+            <img
+              src={item.img}
+              alt="img"
+              className="aspect-square w-[60px] [transform-style:preserve-3d] hover:[transform:rotateY(180deg)] transition-all duration-500"
+            />
+            <div className="flex flex-col gap-2">
+              <div>{item.title}</div>
+              <div className="font-thin">{item.des}</div>
+            </div>
+          </div>
+        ))}
+      </div>
       <div className="flex justify-between items-center 2xl:px-[20%] px-[10%] py-10 ">
         <div className=" flex flex-col gap-2">
           <div>
@@ -91,7 +132,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-[#ebebeb]  w-full text-[#6d2b0a] py-2 flex justify-center">
+      <div className="bg-[#6d2b0a]  w-full text-white py-2 flex justify-center">
         <div>TÂM AN - VẠN PHÚC </div>
       </div>
     </>
