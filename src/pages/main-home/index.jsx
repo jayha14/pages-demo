@@ -1,17 +1,17 @@
-import Card from "./components/Card";
-import FirstMainContent from "./components/FirstMainContent";
-import GuestCard from "./components/GuestCard";
-import SecondMainContent from "./components/SecondMainContent";
-import SmailBanner from "./components/SmailBanner";
-import Title from "./components/Title";
-import TopCard from "./components/TopCard";
-import Image from "../../assets/images/7E1A8283-2048x1365.jpeg";
+import Card from './components/Card';
+import FirstMainContent from './components/FirstMainContent';
+import GuestCard from './components/GuestCard';
+import SecondMainContent from './components/SecondMainContent';
+import SmailBanner from './components/SmailBanner';
+import Title from './components/Title';
+import TopCard from './components/TopCard';
+import Image from '../../assets/images/7E1A8283-2048x1365.jpeg';
 
 function MainHome() {
   return (
     <div>
       <div className="relative bottom-20 px-80">
-        <div className="flex flex-col space-y-5">
+        <div className="flex flex-col space-y-10">
           <TopCard />
           <FirstMainContent />
           <div className="flex gap-5">

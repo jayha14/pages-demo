@@ -41,7 +41,7 @@ function Layout(props) {
           </div>
         </div>
       </div>
-      {scrollY > 100 && (
+      {scrollY > 50 && (
         <div
           className="fixed right-20 bottom-10 z-[9999999] space-y-5"
           onClick={handleScrollToTop}
